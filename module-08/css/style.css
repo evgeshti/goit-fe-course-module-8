@@ -1,0 +1,338 @@
+/* базовый сброс */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* сброс листам стилизацию */
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* pattaya-regular - latin */
+@font-face {
+  font-family: "Pattaya";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Pattaya"), local("Pattaya-Regular"),
+    url("../fonts/pattaya-v5-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/pattaya-v5-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* arsenal-regular - latin */
+@font-face {
+  font-family: "Arsenal";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Arsenal Regular"), local("Arsenal-Regular"),
+    url("../fonts/arsenal-v4-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/arsenal-v4-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* arsenal-italic - latin */
+@font-face {
+  font-family: "Arsenal";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Arsenal Italic"), local("Arsenal-Italic"),
+    url("../fonts/arsenal-v4-latin-italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/arsenal-v4-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* container */
+
+.container {
+  width: 940px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+/* Header */
+.navigation {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: 128px;
+}
+
+/* Logo */
+
+.logo {
+  font-family: "Pattaya";
+  font-style: normal;
+  font-weight: 400;
+  color: #fed136;
+}
+
+/* Navigation list */
+.navigation_list {
+  display: flex;
+  justify-content: space-between;
+  width: 490px;
+}
+
+.navigation_list_item {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.3s linear;
+}
+
+.navigation_list_item:hover {
+  transition: 0.3s linear;
+  color: #fed136;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+/* Main */
+h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.section_title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.title_description {
+  text-align: center;
+  margin-bottom: 182px;
+  font-family: "Arsenal";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.services_wrapper {
+  padding-bottom: 123px;
+}
+
+.services_list {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.services_list_item_title_1,
+.services_list_item_title_2,
+.services_list_item_title_3 {
+  margin-bottom: 22px;
+}
+
+.services_list_item_title_1::before {
+  content: "";
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  left: 38%;
+  bottom: 152px;
+  border: #fed136 3px solid;
+  background-image: url(../img/Basket.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services_list_item_title_2::before {
+  content: "";
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  left: 38%;
+  bottom: 152px;
+  border: #fed136 3px solid;
+  background-image: url(../img/Laptop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services_list_item_title_3::before {
+  content: "";
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  left: 38%;
+  bottom: 152px;
+  border: #fed136 3px solid;
+  background-image: url(../img/Locked.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services_list_item {
+  width: 340px;
+  position: relative;
+}
+
+.services_list_item_description {
+  font-family: "Arsenal";
+  font-style: normal;
+  font-weight: 400;
+  width: 310px;
+}
+
+/* Footer */
+.map {
+  background-color: rgb(34, 34, 34);
+  background-image: url(../img/Map.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.contact_title {
+  text-align: center;
+  padding-top: 112px;
+  color: white;
+}
+
+.contact_description {
+  text-align: center;
+  margin-bottom: 77px;
+  font-family: "Arsenal";
+  font-style: italic;
+  font-weight: 400;
+  color: #777777;
+}
+
+.contact_form {
+  width: 440px;
+  height: 20px;
+  border-radius: 3px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 20px 0px 20px 20px;
+  outline: unset;
+}
+
+.contact_form:nth-last-child(n) {
+  margin-bottom: 28px;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.form_input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_1:required:focus:valid {
+  border: 3px solid green;
+}
+.form_1:required:focus:invalid {
+  border: 3px solid red;
+}
+
+.form_2:required:focus:valid {
+  border: 3px solid green;
+}
+.form_2:required:focus:invalid {
+  border: 3px solid red;
+}
+
+.form_3:required:focus:valid {
+  border: 3px solid green;
+}
+.form_3:required:focus:invalid {
+  border: 3px solid red;
+}
+
+.form_text_textarea {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 20px 0px 0px 20px;
+  resize: none;
+  width: 434px;
+  height: 225px;
+  border-radius: 3px;
+}
+
+.button {
+  text-align: center;
+  padding-bottom: 116px;
+}
+
+.form_button {
+  padding: 25px 48px;
+  background-color: white;
+  border-style: none;
+  border-radius: 3px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #777777;
+  transition: 0.3s linear;
+}
+
+.form_button:hover {
+  background-color: #fed136;
+  color: white;
+  transition: 0.3s linear;
+}
