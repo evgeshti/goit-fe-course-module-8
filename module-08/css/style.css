@@ -93,11 +93,18 @@ img {
   font-size: 14px;
   color: rgb(255, 255, 255);
   line-height: 1.2;
+  cursor: pointer;
 }
 .sign_up {
   border: 2px solid white;
   background: none;
   border-radius: 22px;
+}
+
+.log_in {
+  border: none;
+  background: none;
+  /* border-radius: 22px; */
 }
 
 .logo_link {
@@ -111,6 +118,7 @@ img {
 
 .logo {
   margin-bottom: 40px;
+  cursor: pointer;
 }
 
 .section_title {
@@ -149,6 +157,7 @@ img {
 
 .section_button_wrapper {
   padding-bottom: 138px;
+  cursor: pointer;
 }
 
 /* Main */
@@ -204,6 +213,7 @@ img {
   border: 3px solid rgb(255, 78, 80);
   border-radius: 26px;
   padding: 15px 0px;
+  cursor: pointer;
 }
 
 .partners_list_item {
