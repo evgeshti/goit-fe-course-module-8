@@ -365,3 +365,58 @@ img {
     border-radius: 50%;
   }
 }
+
+@media (min-width: 1024px) {
+  .main_head {
+    padding: 50px 248px 232px 248px;
+  }
+
+  .btn_header {
+    cursor: pointer;
+  }
+
+  .background {
+    background-image: url(../img/Background_desktop.png);
+    background-color: rgb(26, 25, 21);
+    background-size: cover;
+  }
+
+  .nav_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: baseline;
+  }
+
+  .container {
+    content: "";
+    max-width: 940px;
+    margin: 0 auto;
+  }
+
+  .main {
+    padding: 78px 84px 72px 84px;
+  }
+
+  .partners_list_ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .partners_list_item {
+    width: 200px;
+  }
+
+  .partners_icon_wrapper::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgb(255, 255, 255);
+    position: absolute;
+    right: 18%;
+    bottom: 55%;
+    border-radius: 50%;
+  }
+}
