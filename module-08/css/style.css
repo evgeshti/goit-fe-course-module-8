@@ -298,7 +298,7 @@ img {
   }
 
   .section {
-    width: 504px;
+    width: 580px;
     margin: 0 auto;
     margin-bottom: 46px;
   }
@@ -411,7 +411,7 @@ img {
   }
 
   .section_title_description p {
-    width: 320px;
+    width: 400px;
     margin-bottom: 40px;
   }
 
@@ -430,9 +430,9 @@ img {
     flex-wrap: wrap;
   }
 
-  .partners_list_item {
-    width: 200px;
-  }
+  /* .partners_list_item {
+    width: 220px;
+  } */
 
   .partners_icon_wrapper::after {
     content: "";
