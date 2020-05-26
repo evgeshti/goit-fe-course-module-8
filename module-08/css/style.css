@@ -425,14 +425,14 @@ img {
 
   .partners_list_ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  /* .partners_list_item {
-    width: 220px;
-  } */
+  .partners_list_item {
+    width: 200px;
+  }
 
   .partners_icon_wrapper::after {
     content: "";
