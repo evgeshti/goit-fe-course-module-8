@@ -222,6 +222,7 @@ img {
 
 .partners_icon_wrapper::after {
   content: "";
+  box-sizing: border-box;
   width: 40px;
   height: 40px;
   border: 4px solid rgb(255, 255, 255);
@@ -384,11 +385,23 @@ img {
     margin: 0 auto;
   }
 
+  .log_in:hover {
+    color: rgb(255, 78, 80);
+    transition: linear 0.3s;
+  }
+
+  .sign_up:hover {
+    color: rgb(255, 78, 80);
+    border-color: rgb(255, 78, 80);
+    transition: linear 0.3s;
+  }
+
   .section_title {
     font-size: 52px;
     width: 550px;
     margin: 0 auto;
     margin-bottom: 46px;
+    /* margin: 0; */
   }
 
   .section_title_description p {
@@ -398,6 +411,12 @@ img {
 
   .section_button_wrapper {
     padding-bottom: 0px;
+  }
+
+  .section_button:hover {
+    background-color: white;
+    color: rgb(255, 78, 80);
+    transition: linear 0.3s;
   }
 
   .main {
@@ -418,5 +437,12 @@ img {
   .partners_button {
     width: 194px;
     margin: 0 auto;
+  }
+
+  .partners_button:hover {
+    background-color: rgb(255, 78, 80);
+    border: 3px solid rgb(255, 78, 80);
+    color: white;
+    transition: linear 0.3s;
   }
 }
